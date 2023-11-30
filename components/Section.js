@@ -1,38 +1,52 @@
+'use client';
+
+import { Card } from 'flowbite-react';
 import Image from 'next/image';
 
 const Section = ()=> {
     return(
-        <div className="min-h-screen dark:bg-gray-800 dark:text-gray-100">
+        <div className="min-h-screen bg-white dark:bg-gray-800 dark:text-gray-100">
             <div className="p-6 space-y-8">
                 <main>
                     <div className="container mx-auto space-y-16">
-                        <section>
-                            <span className="block mb-2 text-xs font-medium tracki uppercase lg:text-center dark:text-violet-400">How it works</span>
+                        <section className="">
+                            <span className="block mb-2 text-xs font-medium tracki uppercase lg:text-center text-orange-500 dark:text-violet-400">How it works</span>
                             <h2 className="text-5xl font-bold lg:text-center dark:text-gray-50"> Chill Academy formula: </h2>
                             <div className="grid gap-6 my-16 lg:grid-cols-3">
-                                <div className="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
-                                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">1</div>
-                                    <p className="text-2xl font-semibold">
-                                        <b>Listening: <br/> 
-                                        </b>Our formula is simple – we listen, we solve. Your project becomes our priority, and we commit to delivering the best solution possible.
+                                <Card className="max-w-sm bg-gray-100 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                                    imgSrc="/images/listening.png"
+                                    >
+                                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Listening: 
+                                    </h5>
+                                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                                       Our formula is simple – we listen, we solve. Your project becomes our priority, and we commit to delivering the best solution possible.
                                             We actively listen to your ideas and requirements to fully grasp your vision.
-
                                     </p>
-                                </div>
-                                <div className="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
-                                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">2</div>
-                                    <p className="text-2xl font-semibold">
-                                        <b>Problem-Solving:</b> <br/>
-                                        We approach your project as our own, taking ownership of the challenges and finding the best solutions.
+                                </Card>
+                                <Card className="max-w-sm bg-gray-100 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                                    imgSrc="/images/problem-solving.gif"
+                                    >
+                                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Problem-Solving: 
+                                    </h5>
+                                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                                    We approach your project as our own, taking ownership of the challenges and finding the best solutions.
                                     </p>
-                                </div>
-                                <div className="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
-                                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">3</div>
-                                    <p className="text-2xl font-semibold">
-                                        <b>Reliability:</b> <br/>
-                                        You can count on us to deliver your project on time and within budget.
+                                </Card>
+                                <Card className="max-w-sm bg-gray-100 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                                    imgSrc="/images/reliability.png"
+                                    >
+                                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Reliability:
+                                    </h5>
+                                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                                    You can count on us to deliver your project on time and within budget.
                                     </p>
-                                </div>
+                                </Card>
                             </div>
                         </section>
                         <section className="grid gap-6 lg:grid-cols-2">
