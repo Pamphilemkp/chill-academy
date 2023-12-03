@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import bulb from "../assets/images/bulb.gif"
-
+import bulb from "../assets/images/bulb.gif";
+import Typewriter from "typewriter-effect";
 const Hero = () => {
+  useEffect(() => {
+    // Your code for useEffect goes here
+  }, []);
   return (
     <div>
       <section className="bg-gray-800 text-gray-100">
@@ -16,31 +20,48 @@ const Hero = () => {
           >
             <h1 className="text-5xl font-bold leadi sm:text-6xl">
               Welcome to
-              <span className="text-header-gradient"> Chill IT</span>
+              <span>
+              <h1 className="text-header-gradient ">
+                <Typewriter
+                  options={{
+                    strings: ["Chill IT|"],
+                    autoStart: true,
+                    loop: true,
+                    
+                  }}
+                />
+              </h1>
+              </span>
             </h1>
             <div className="flex justify-center">
-            <p className="mt-4 mb-8 text-lg sm:mb-12">
-              Where Ideas Come to Life</p>
+              <p className="mt-4 mb-8 text-lg sm:mb-12">
+                Where Ideas Come to Life
+              </p>
               <Image
                 src={bulb}
                 alt="SmallGIF"
                 width={50}
                 height={10}
                 unoptimized
-                style={{ maxHeight: '45px' }}
+                style={{ maxHeight: "45px" }}
               />
+            </div>
+            <p
+              className="  mb-8 text-lg sm:mb-12"
+              style={{ marginTop: "-30px" }}
+            >
+              Empower your vision with our{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">
+                innovative solutions
+              </span>
+              . We're not just developers; we're partners in turning your ideas
+              into reality. Let's build something extraordinary together
+            </p>
 
-           </div>
-              <p className="  mb-8 text-lg sm:mb-12" style={{ marginTop: '-30px' }}>
-                Empower your vision with our <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">innovative solutions</span>. We're not
-                just developers; we're partners in turning your ideas into
-                reality. Let's build something extraordinary together
-              </p>
-            
             <div
               className="flex flex-col md:gap-5 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
               bis_skin_checked="1"
-              style={{ marginTop: '-20px' }}
+              style={{ marginTop: "-20px" }}
             >
               <a
                 rel="noopener noreferrer"
