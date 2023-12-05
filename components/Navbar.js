@@ -28,7 +28,7 @@ const Navbar = () => {
                 className="rounded-circle"
               />
             </div>
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 ">
+            <span className="ml-2 text-xl text-header-gradient font-bold tracking-wide text-gray-100 ">
               Chill IT
             </span>
           </a>
@@ -160,8 +160,8 @@ const Navbar = () => {
                             className="rounded-circle"
                           />
                         </div>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Chill IT
+                        <span className="ml-2 text-xl text-header-gradient font-bold tracking-wide text-gray-800 ">
+                          Chill Academy
                         </span>
                       </a>
                     </div>

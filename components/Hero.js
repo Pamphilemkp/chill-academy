@@ -11,30 +11,28 @@ const Hero = () => {
     <div>
       <section className="bg-gray-800 text-gray-100">
         <div
-          className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-20 lg:flex-row lg:justify-between"
+          className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:flex-row lg:justify-between "
           bis_skin_checked="1"
         >
           <div
-            className="flex flex-col justify-center p-5 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+            className="flex flex-col justify-center p-5 text-center smmargin-top  rounded-sm lg:max-w-md xl:max-w-lg lg:text-left "
             bis_skin_checked="1"
           >
             <h1 className="text-5xl font-bold leadi sm:text-6xl">
               Welcome to
-              <span>
-              <h1 className="text-header-gradient ">
+              <div className="text-header-gradient mt-4 lg:mt-2">
                 <Typewriter
                   options={{
-                    strings: ["Chill IT|"],
+                    strings: ["Chill Academy|"],
                     autoStart: true,
                     loop: true,
                     
                   }}
                 />
-              </h1>
-              </span>
+              </div>
             </h1>
             <div className="flex justify-center">
-              <p className="mt-4 mb-8 text-lg sm:mb-12">
+              <p className="mt-3 mb-8 text-lg sm:mb-12">
                 Where Ideas Come to Life
               </p>
               <Image
@@ -48,7 +46,7 @@ const Hero = () => {
             </div>
             <p
               className="  mb-8 text-lg sm:mb-12"
-              style={{ marginTop: "-30px" }}
+              style={{ marginTop: "-40px" }}
             >
               Empower your vision with our{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">

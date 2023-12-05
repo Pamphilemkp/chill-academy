@@ -4,9 +4,22 @@
 
 .text-header-gradient {
     background: #3984f4;
+    font-size: 0.8em;
+    text-wrap: nowrap;
+    padding-bottom: 10px;
     background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media only screen and (max-width: 767px) {
+    .smmargin-top {
+        margin-top: 1em;
+        display: flex;
+        gap: 20px;
+    }
+
+ 
+  }
 
