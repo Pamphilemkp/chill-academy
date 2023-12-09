@@ -8,10 +8,10 @@ const Hero = () => {
     // Your code for useEffect goes here
   }, []);
   return (
-    <div>
-      <section className="bg-gray-800 text-gray-100">
+    <div className="bg-gray-800 text-gray-100">
+      <section >
         <div
-          className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:flex-row lg:justify-between "
+          className="container flex flex-col justify-center p-6 mx-auto py-12 lg:py-16 lg:flex-row lg:justify-between "
           bis_skin_checked="1"
         >
           <div
