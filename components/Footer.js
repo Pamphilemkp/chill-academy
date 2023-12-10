@@ -43,7 +43,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                  Our Team
                 </a>
@@ -51,7 +51,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                 Approach
                 </a>
@@ -59,7 +59,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                 Clients
                 </a>
@@ -67,7 +67,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                 Testimonials
                 </a>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                  Web Applications
                 </a>
@@ -89,7 +89,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                   Mobile Applications
                 </a>
@@ -97,7 +97,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                   Websites 
                 </a>
@@ -105,7 +105,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                   SEO Performances
                 </a>
@@ -113,7 +113,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                   Project Enhancement
                 </a>
@@ -121,7 +121,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/"
-                  className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
                   Subservices
                 </a>
@@ -130,10 +130,10 @@ const Footer = () => {
           </div>
           <span className="text-base font-bold tracking-wide text-white">
             Social
-            <div className="flex items-center mt-1 space-x-3">
+            <div className="flex items-center mt-4 space-x-3">
               <a
                 href="/"
-                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none "
+                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none max-w-xs transition duration-300 ease-in-out hover:scale-110"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                   <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
@@ -141,7 +141,7 @@ const Footer = () => {
               </a>
               <a
                 href="/"
-                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none "
+                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none max-w-xs transition duration-300 ease-in-out hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ const Footer = () => {
               </a>
               <a
                 href="/"
-                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none "
+                className="flex bg-white text-pink-400 shadow-lg font-normal h-9 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none max-w-xs transition duration-300 ease-in-out hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

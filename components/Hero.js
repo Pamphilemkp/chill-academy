@@ -20,7 +20,7 @@ const Hero = () => {
           >
             <h1 className="text-5xl font-bold leadi sm:text-6xl">
               Welcome to
-              <div className="text-header-gradient mt-4 lg:mt-2">
+              <div className="text-header-gradient mt-4 lg:mt-2 ">
                 <Typewriter
                   options={{
                     strings: ["Chill Academy|"],

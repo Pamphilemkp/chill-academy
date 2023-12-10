@@ -28,8 +28,8 @@ const Navbar = () => {
                 className="rounded-circle"
               />
             </div>
-            <span className="ml-2 text-xl text-header-gradient font-bold tracking-wide text-gray-100 ">
-              Chill IT
+            <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide ">
+            Chill Academy
             </span>
           </a>
           <ul className="flex items-center hidden space-x-4 lg:flex">
