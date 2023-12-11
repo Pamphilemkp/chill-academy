@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
               />
             </div>
             <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide ">
-            Chill Academy
+              Chill Academy
             </span>
           </a>
           <ul className="flex items-center hidden space-x-4 lg:flex">
@@ -88,9 +89,9 @@ const Navbar = () => {
                 className="items-center flex-shrink-0 hidden lg:flex"
                 bis_skin_checked="1"
               >
-                {/* <button className="self-center px-4 py-2 text-white rounded">
-                  Sign in
-                </button> */}
+                <button className="self-center px-4 py-2 text-white rounded">
+                  <ThemeSwitcher />
+                </button>
                 <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
                   Get Started
                 </button>
