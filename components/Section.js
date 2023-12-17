@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Section = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-800 dark:text-gray-100 mt-4">
+    <div className="min-h-screen bg-blue-100 dark:bg-gray-800  dark:text-gray-100 mt-4">
       <div className="p-6 space-y-8">
         <main>
           <div className="container mx-auto space-y-16">
@@ -13,7 +13,7 @@ const Section = () => {
               <span className="block mb-2 text-xs font-medium tracki uppercase  text-center lg:text-center text-orange-500 dark:text-violet-400">
                 How it works
               </span>
-              <h2 className=" text-xl lg:text-5xl font-bold lg:text-center  dark:text-gray-50 relative text-center">
+              <h2 className=" text-xl lg:text-5xl font-bold lg:text-center text-gray-800 dark:text-gray-50 relative text-center">
                 {" "}
                 <span className="relative">
                   Chill Academy Formula:
