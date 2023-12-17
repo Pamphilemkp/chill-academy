@@ -8,19 +8,19 @@ const Hero = () => {
     // Your code for useEffect goes here
   }, []);
   return (
-    <div className="bg-gray-800 text-gray-100">
+    <div className="bg-blue-100 dark:bg-gray-800 text-gray-100 custom-box pb-4 ">
       <section >
         <div
-          className="container flex flex-col justify-center p-6 mx-auto py-12 lg:py-16 lg:flex-row lg:justify-between "
+          className="container flex flex-col justify-center p-6 mx-auto py-12 lg:py-16 lg:flex-row lg:justify-between  " 
           bis_skin_checked="1"
         >
           <div
-            className="flex flex-col justify-center p-5 text-center smmargin-top  rounded-sm lg:max-w-md xl:max-w-lg lg:text-left "
+            className="flex flex-col justify-center p-5 text-center smmargin-top  rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
             bis_skin_checked="1"
           >
-            <h1 className="text-5xl font-bold leadi sm:text-6xl">
+            <h1 className="text-5xl font-bold leading sm:text-6xl text-black dark:text-white">
               Welcome to
-              <div className="text-header-gradient mt-4 lg:mt-2 ">
+              <div className="text-header-gradient mt-4 lg:mt-2 uppercase">
                 <Typewriter
                   options={{
                     strings: ["Chill Academy|"],
@@ -32,7 +32,7 @@ const Hero = () => {
               </div>
             </h1>
             <div className="flex justify-center">
-              <p className="mt-3 mb-8 text-lg sm:mb-12">
+              <p className="mt-3 mb-8 text-lg sm:mb-12  text-gray-800 dark:text-white">
                 Where Ideas Come to Life
               </p>
               <Image
@@ -45,11 +45,11 @@ const Hero = () => {
               />
             </div>
             <p
-              className="  mb-8 text-lg sm:mb-12"
-              style={{ marginTop: "-40px" }}
+              className="  mb-8 text-lg sm:mb-12  text-gray-800 dark:text-white "
+              style={{ marginTop: "-40px"}}
             >
               Empower your vision with our{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">
+              <span className="bg-clip-text text-transparent font-bold bg-gradient-to-r from-blue-500 to-teal-400  text-lg">
                 innovative solutions
               </span>
               . We're not just developers; we're partners in turning your ideas
@@ -71,7 +71,7 @@ const Hero = () => {
               <a
                 rel="noopener noreferrer"
                 href="#"
-                className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
+                className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-inherit dark:text-gradient-3  border border-[#0c66ee] flex items-center justify-center text-black text-bold text-gradient-3"
               >
                 Get Started
               </a>
@@ -88,9 +88,11 @@ const Hero = () => {
               height={900}
               className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
+            
           </div>
         </div>
       </section>
+      
     </div>
   );
 };
