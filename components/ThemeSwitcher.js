@@ -34,7 +34,7 @@ const ThemeSwitcher = () => {
 
     else {
       return (
-        <MoonIcon className="w-6 h-6 text-gray-900 " role="button" onClick={() => 
+        <MoonIcon className="w-6 h-6  text-blue-500  " role="button" onClick={() => 
          setTheme('dark')} />
       )
     }

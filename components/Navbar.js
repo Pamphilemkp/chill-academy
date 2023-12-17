@@ -6,7 +6,8 @@ import Image from "next/image";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-800 ">
+    <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white
+    ">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -29,7 +30,7 @@ const Navbar = () => {
                 className="rounded-circle"
               />
             </div>
-            <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide ">
+            <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide  uppercase">
               Chill Academy
             </span>
           </a>
@@ -39,7 +40,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-100 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
               >
                 Product
               </a>
@@ -49,7 +50,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-100 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
               >
                 Features
               </a>
@@ -59,7 +60,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="font-medium tracking-wide text-gray-100 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
               >
                 Pricing
               </a>
@@ -69,7 +70,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="About us"
                 title="About us"
-                className="font-medium tracking-wide text-gray-100 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
               >
                 About us
               </a>
