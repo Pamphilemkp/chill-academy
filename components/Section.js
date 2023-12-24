@@ -18,9 +18,7 @@ const Section = () => {
                 <span className="relative">
                   Chill Academy Formula:
                   <span
-                    className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-700 via-cyan-400 to-purple-300
- rounded-full"
-                  ></span>
+                    className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-700 via-cyan-400 to-purple-300 rounded-full"></span>
                 </span>
               </h2>
 
@@ -30,10 +28,12 @@ const Section = () => {
                     class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
-                    <img
+                    <Image
                       class=" rounded-full mb-10"
                       src="/images/listening.png"
                       alt="userimg"
+                      width={1000}
+                       height={1000}
                     />
                   </div>
                   <div
@@ -44,10 +44,10 @@ font-bold text-gray-800 text-base"
                       Listening:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                      " Our formula is simple – we listen, we solve. Your project
+                      {`" Our formula is simple – we listen, we solve. Your project
                       becomes our priority, and we commit to delivering the best
                       solution possible. We actively listen to your ideas and
-                      requirements to fully grasp your vision. "
+                      requirements to fully grasp your vision. "`}
                     </p>
                   </div>
                   <div class="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
@@ -57,10 +57,12 @@ font-bold text-gray-800 text-base"
                     class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
-                    <img
+                    <Image
                       class=" rounded-full mb-10"
                       src="/images/problem-solving-unscreen.gif"
                       alt="userimg"
+                      width={1000}
+                      height={1000}
                     />
                   </div>
                   <div
@@ -71,8 +73,8 @@ font-bold text-gray-800 text-base"
                       Problem-Solving:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                     " We approach your project as our own, taking ownership of
-                      the challenges and finding the best solutions. "
+                     {`" We approach your project as our own, taking ownership of
+                      the challenges and finding the best solutions. "`}
                     </p>
                   </div>
                   <div class="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
@@ -82,10 +84,12 @@ font-bold text-gray-800 text-base"
                     class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
-                    <img
+                    <Image
                       class=" h-48 rounded-full mb-10"
                       src="/images/handshake.png"
                       alt="userimg"
+                      width={1000}
+                      height={1000}
                     />
                   </div>
                   <div
@@ -96,8 +100,8 @@ font-bold text-gray-800 text-base"
                       Reliability:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                      " You can count on us to deliver your project on time and
-                      within budget. "
+                      {`" You can count on us to deliver your project on time and
+                      within budget."`}
                     </p>
                   </div>
                 </div>
