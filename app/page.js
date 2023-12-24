@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
 import Faqs from "@/components/Faqs";
+import Services from "@/components/Services";
+import Partners from "@/components/Partners";
 
 
 export default function Home() {
@@ -12,6 +14,10 @@ export default function Home() {
       <Hero />
       <Section />
       <Faqs />
+      <div className=" bg-gradient-to-r from-purple-500 to-blue-800 border border-purple-600 ">
+        <Services />
+        <Partners />
+      </div>
       <Footer />
     </>
   );
