@@ -56,3 +56,11 @@
   border-image: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
   border-image-slice: 1;
 }
+
+.card-background{
+  background-image: url(../public/images/ServiceBackground.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+width: 100%;
+}
