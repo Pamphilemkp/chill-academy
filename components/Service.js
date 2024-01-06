@@ -3,6 +3,9 @@ import Image from "next/image";
 import ServiceBackground from "../public/images/ServiceBackground.gif";
 import rightArrow from "../public/images/rightarrow.png";
 import webDesignLogo from "../public/images/Services/ServiceCardImages/WebDesign.png";
+import SEO from "../public/images/Services/ServiceCardImages/SEOWeb.png";
+import LearningCode from "../public/images/Services/ServiceCardImages/Learning.png";
+import Innovation from "../public/images/Services/ServiceCardImages/Innovation.png";
 import greenTick from "../public/images/Services/green tick.png";
 
 const Service = () => {
@@ -34,7 +37,7 @@ const Service = () => {
                     <Image
                       src={webDesignLogo}
                       alt="rightarrow"
-                      className=" md:mt-4 w-[45%] md:max-w-[40%] mt-4  lg:w-[90%] "
+                      className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
@@ -126,9 +129,9 @@ const Service = () => {
                 <div className="flex lg:flex-row md:flex-col flex-col md:justify-center md:items-center  ">
                   <div className=" lg:w-[30%] lg:h-[100%] md:w-full w-[100%] flex justify-center items-center">
                     <Image
-                      src={webDesignLogo}
-                      alt="rightarrow"
-                      className=" md:mt-4 w-[45%] md:max-w-[40%] mt-4  lg:w-[90%] "
+                      src={SEO}
+                      alt="SEO Logo"
+                      className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[90%] "
                     />
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
@@ -220,9 +223,9 @@ const Service = () => {
                 <div className="flex lg:flex-row md:flex-col flex-col md:justify-center md:items-center  ">
                   <div className=" lg:w-[30%] lg:h-[100%] md:w-full w-[100%] flex justify-center items-center">
                     <Image
-                      src={webDesignLogo}
-                      alt="rightarrow"
-                      className=" md:mt-4 w-[45%] md:max-w-[40%] mt-4  lg:w-[90%] "
+                      src={LearningCode}
+                      alt="Learning Logo"
+                      className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
@@ -290,7 +293,7 @@ const Service = () => {
                             />
                           </div>
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
-                            <div className="w-[38%] lg:w-[44%] md:w-[36%]">
+                            <div className="w-[38%] lg:w-[44%] md:w-[45%]">
                               <span className="font-bold text-header-gradient-2 text-xs lg:text-xs md:text-sm">
                               Software Deals:
                               </span>{" "}
@@ -314,9 +317,9 @@ const Service = () => {
                 <div className="flex lg:flex-row md:flex-col flex-col md:justify-center md:items-center  ">
                   <div className=" lg:w-[30%] lg:h-[100%] md:w-full w-[100%] flex justify-center items-center">
                     <Image
-                      src={webDesignLogo}
-                      alt="rightarrow"
-                      className=" md:mt-4 w-[45%] md:max-w-[40%] mt-4  lg:w-[90%] "
+                      src={Innovation}
+                      alt="Innovation Logo"
+                      className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
@@ -359,7 +362,7 @@ const Service = () => {
                             height={10}
                           />
                           <div className="flex lg:gap-0 md:gap-3 ">
-                            <div className="flex w-[53%] lg:w-[52%] md:w-[40%] ">
+                            <div className="flex w-[53%] lg:w-[52%] md:w-[62%] ">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs">
                               Innovative Solutions:
                               </span>{" "}
