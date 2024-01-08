@@ -14,6 +14,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link href="https://unpkg.com/pattern.css" rel="stylesheet"></link>
       <body className="min-h-screen mx-auto max-w-6xl flex flex-col bg-white   dark:bg-gray-800">
        <main className={poppins.className}>
         <Provider>

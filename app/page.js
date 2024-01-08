@@ -1,3 +1,4 @@
+import DetailServices from "@/components/DetailServices";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
 
       <Section />
       <Service/>
+      <DetailServices/>
       <Footer />
     </>
   );
