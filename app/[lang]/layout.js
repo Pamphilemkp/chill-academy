@@ -3,7 +3,7 @@ import './globals.css';
 import Provider from "@/components/Provider";
 
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'fr' }]
+  return [{ lang: 'en' }, { l-m ang: 'fr' }]
 }
 
 
