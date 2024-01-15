@@ -1,6 +1,9 @@
 import React from "react";
+import { Locale, getDictionary } from './dictionaries';
 
-const Footer = () => {
+const Footer = async ({ params: { lang } }) => {
+  const intl = await getDictionary(lang);
+
   return (
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  dark:bg-gray-800 text-gray-800">
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
@@ -47,6 +50,9 @@ const Footer = () => {
                 >
                  Our Team
                 </a>
+              </li>
+              <li>
+                {intl.get_started}
               </li>
               <li>
                 <a

@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Image from "next/image";
+import SwitchLang from '@/components/SwitchLang/SwitchLang';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white
-    ">
+    <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -74,6 +74,9 @@ const Navbar = () => {
               >
                 About us
               </a>
+            </li>
+            <li>
+              <SwitchLang />
             </li>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
