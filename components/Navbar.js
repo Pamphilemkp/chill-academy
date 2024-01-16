@@ -20,6 +20,8 @@ const Navbar = () => {
               <style>{`
                 .rounded-circle {
                   border-radius: 50%;
+                  width: auto; 
+                  height: auto; 
                 }
               `}</style>
               <Image
@@ -78,14 +80,7 @@ const Navbar = () => {
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
-              {/* <a
-                  href="/"
-                  class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                  aria-label="Sign up"
-                  title="Sign up"
-                >
-                  Sign up
-                </a> */}
+         
               <div
                 className="items-center flex-shrink-0 hidden lg:flex"
                 bis_skin_checked="1"
