@@ -21,8 +21,8 @@ const Service = () => {
           </div>
           <h1 className="font-bold text-3xl text-opacity-90 text-wrap leading-relaxed w-80 text-center">
             Your{" "}
-            <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block">
-              <span class="relative text-white ">one-stop shop</span>
+            <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block">
+              <span className="relative text-white ">one-stop shop</span>
             </span>{" "}
             for all your needs<span className="text-red-500">.</span>
           </h1>
@@ -40,7 +40,7 @@ const Service = () => {
                       className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
-                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
+                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
                       Web & Mobile Development
                     </h3>
@@ -134,7 +134,7 @@ const Service = () => {
                       className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[90%] "
                     />
                   </div>
-                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
+                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
                     Enhancement & Support
                     </h3>
@@ -228,7 +228,7 @@ const Service = () => {
                       className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
-                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
+                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
                     Learning & Growth
                     </h3>
@@ -322,7 +322,7 @@ const Service = () => {
                       className=" md:mt-4 w-[45%] md:w-[40%] mt-4  lg:w-[100%] "
                     />
                   </div>
-                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
+                  <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
                     Talent & Innovation
                     </h3>

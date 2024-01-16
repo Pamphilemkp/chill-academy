@@ -64,8 +64,10 @@
   height: auto;
 width: 100%;
 }
-.text-gradient {
-  background: linear-gradient(to right, #63b3ed, #90cdf4); /* Brighter blue gradient */
+.text-blue-gradient {
+  background: linear-gradient(to right, #2c7af0, #6c5bce); /* Brighter blue gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }

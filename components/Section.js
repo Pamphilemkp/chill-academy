@@ -26,19 +26,19 @@ const Section = () => {
               </h2>
 
               <div className="grid gap-8 my-16 lg:grid-cols-3">
-                <div class="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl mt-4">
+                <div className="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl mt-4">
                   <div
-                    class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
+                    className="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
                     <img
-                      class=" rounded-full mb-10"
+                      className=" rounded-full mb-10"
                       src="/images/listening.png"
                       alt="userimg"
                     />
                   </div>
                   <div
-                    class="w-full h-36 px-6 mt-36 flex flex-col justify-evenly 
+                    className="w-full h-36 px-6 mt-36 flex flex-col justify-evenly 
 font-bold text-gray-800 text-base"
                   >
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -51,21 +51,21 @@ font-bold text-gray-800 text-base"
                       requirements to fully grasp your vision. "
                     </p>
                   </div>
-                  <div class="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
+                  <div className="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
                 </div>
-                <div class="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl  mt-4 ">
+                <div className="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl  mt-4 ">
                   <div
-                    class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
+                    className="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
                     <img
-                      class=" rounded-full mb-10"
+                      className=" rounded-full mb-10"
                       src="/images/problem-solving-unscreen.gif"
                       alt="userimg"
                     />
                   </div>
                   <div
-                    class="w-full h-36 px-6 mt-14 flex flex-col justify-evenly 
+                    className="w-full h-36 px-6 mt-14 flex flex-col justify-evenly 
 font-bold text-gray-800 text-base"
                   >
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -76,21 +76,21 @@ font-bold text-gray-800 text-base"
                       the challenges and finding the best solutions. "
                     </p>
                   </div>
-                  <div class="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
+                  <div className="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
                 </div>
-                <div class="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl mt-4">
+                <div className="relative max-w-sm h-[27rem] bg-blue-100 dark:bg-gray-700 border border-[#0c66ee]  rounded-3xl flex justify-center items-center transform transition-all hover:-translate-y-2 duration-300 shadow-[5px_5px_0px_0px_rgb(29,112,240)] hover:shadow-2xl mt-4">
                   <div
-                    class="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
+                    className="w-72 h-48 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] absolute -top-8 flex flex-col justify-center
     items-center rounded-3xl"
                   >
                     <img
-                      class=" h-48 rounded-full mb-10"
+                      className=" h-48 rounded-full mb-10"
                       src="/images/handshake.png"
                       alt="userimg"
                     />
                   </div>
                   <div
-                    class="w-full h-36 px-6 mt-12 flex flex-col justify-evenly 
+                    className="w-full h-36 px-6 mt-12 flex flex-col justify-evenly 
 font-bold text-gray-800 text-base"
                   >
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
