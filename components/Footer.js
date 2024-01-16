@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-gray-800 ">
+    <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  dark:bg-gray-800 text-gray-800">
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
         <div className="md:max-w-md lg:col-span-2 ">
           <a
@@ -26,20 +26,20 @@ const Footer = () => {
               <rect x="14" y="1" width="7" height="6" />
               <rect x="14" y="11" width="7" height="12" />
             </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase text-white text-header-gradient-2 ">
+            <span className="ml-2 text-xl font-bold tracking-wide dark:text-gray-800 uppercase text-gray-900 text-header-gradient-2 ">
              Chill Academy
             </span>
           </a>
           <div className="mt-4 lg:max-w-sm">
-            <p className="text-sm text-white">
+            <p className="text-sm dark:text-white">
             CHILL ACADEMY is here to make tech easy for everyone. <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">Our mission is simple:</span> guide you through the world of technology in a fun and accessible way. Whether you're new or curious, we're your partners in exploring tech. Let's turn your curiosity into knowledge, making the tech journey personal and enjoyable together.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-3">
           <div>
-            <p className="font-semibold tracking-wide text-white"> ABOUT US </p>
-            <ul className="text-white mt-2 space-y-2">
+            <p className="font-semibold tracking-wide dark:text-white"> ABOUT US </p>
+            <ul className="dark:text-white mt-2 space-y-2">
               <li>
                 <a
                   href="/"
@@ -76,8 +76,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-white">SERVICES</p>
-            <ul className="mt-2 space-y-2 text-white">
+            <p className="font-semibold tracking-wide dark:text-white">SERVICES</p>
+            <ul className="mt-2 space-y-2 dark:text-white text-gray-800">
               <li>
                 <a
                   href="/"
@@ -128,7 +128,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <span className="text-base font-bold tracking-wide text-white">
+          <span className="text-base font-bold tracking-wide dark:text-white">
             Social
             <div className="flex items-center mt-4 space-x-3">
               <a
@@ -200,13 +200,13 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-            <p className="mt-4 text-sm text-gray-500 text-white">
+            <p className="mt-4 text-sm dark:text-gray-500 ">
             Stay connected with Chill ACADEMY! Follow us on our social media channels for the latest updates, news, and tech insights.
             </p>
           </span>
         </div>
       </div>
-      <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row text-white">
+      <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row dark:text-white">
         <p className="text-sm ">
           © Copyright 2023 Chill Academy. All rights reserved.
         </p>
