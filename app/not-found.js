@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Custom404() {
+export default function NotFound() {
     return (
             <main class="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
                 <h1 class="text-9xl font-extrabold text-white tracking-widest">404</h1>
@@ -8,7 +8,7 @@ export default function Custom404() {
                     Page Not Found
                 </div>
                 <button class="mt-5">
-                <Link
+                <div
                     class="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
                 >
                     <span
@@ -16,9 +16,9 @@ export default function Custom404() {
                     ></span>
 
                     <span class="relative block px-8 py-3 bg-[#1A2238] border border-current">
-                    <router-link to="/">Go Home</router-link>
+                    <Link href="/">Go Home</Link>
                     </span>
-                </Link>
+                </div>
                 </button>
             </main>
     )
