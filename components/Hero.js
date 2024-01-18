@@ -1,12 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import bulb from "../assets/images/bulb.gif";
 import Typewriter from "typewriter-effect";
 const Hero = () => {
-  useEffect(() => {
-    // Your code for useEffect goes here
-  }, []);
+
   return (
     <div className="bg-blue-100 dark:bg-gray-800 text-gray-100 custom-box pb-4 ">
       <section >

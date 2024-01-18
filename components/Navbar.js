@@ -23,6 +23,8 @@ const Navbar = () => {
               <style>{`
                 .rounded-circle {
                   border-radius: 50%;
+                  width: auto; 
+                  height: auto; 
                 }
               `}</style>
               <Image

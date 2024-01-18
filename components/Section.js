@@ -2,6 +2,7 @@
 
 import { Card } from "flowbite-react";
 import Image from "next/image";
+import Service from "./Service";
 
 const Section = () => {
   return (
@@ -102,6 +103,8 @@ const Section = () => {
                 </div>
               </div>
             </section>
+     
+            {/* <section>
             <section className="grid gap-6 lg:grid-cols-2">
               <Image
                 width={1000}
@@ -219,7 +222,7 @@ const Section = () => {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> */}
           </div>
         </main>
       </div>
