@@ -2,15 +2,18 @@
 import React, { useState } from "react";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const currentRoute = usePathname();
+
   return (
-    <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white
-    ">
+    <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white relative z-50">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <a
+          <Link
             href="/"
             aria-label="Company"
             title="Company"
@@ -35,52 +38,63 @@ const Navbar = () => {
             <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide  uppercase">
               Chill Academy
             </span>
-          </a>
+          </Link>
           <ul className="flex items-center hidden space-x-4 lg:flex">
             <li>
-              <a
+              <Link
                 href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                aria-label="Home page"
+                title="Home page"
+                className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
               >
-                Product
-              </a>
+                Home
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                href="/Features"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
               >
-                Features
-              </a>
+                Features & Products
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                href="/Pricing"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-              >
+                className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"} >
                 Pricing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                href="/About"
                 aria-label="About us"
                 title="About us"
-                className="font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-              >
+                className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}>
                 About us
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/Faqs"
+                aria-label="Faqs"
+                title="Faqs"
+                className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}   >
+               Faqs
+              </Link>
             </li>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
-         
               <div
                 className="items-center flex-shrink-0 hidden lg:flex"
                 bis_skin_checked="1"
@@ -145,10 +159,11 @@ const Navbar = () => {
                       >
                         <div className="rounded-circle overflow-hidden">
                           <style>{`
-                .rounded-circle {
-                  border-radius: 50%;
-                }
-              `}</style>
+                                  .rounded-circle {
+                                    border-radius: 50%;
+                                  }
+                                `}  
+                          </style>
                           <Image
                             src="/images/Chill logo.jpg"
                             alt="Logo"
@@ -180,55 +195,70 @@ const Navbar = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
-                        <a
+                    <li>
+                        <Link
                           href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          aria-label="Home page"
+                          title="Home page"
+                          className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
-                          Product
-                        </a>
+                          Home
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        <Link
+                          href="/Faqs"
+                          aria-label="Faqs"
+                          title="Faqs"
+                          className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
-                          Features
-                        </a>
+                          Faqs
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          href="/Features"
+                          aria-label="Our product"
+                          title="Our product"
+                          className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                        >
+                          Features & products
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/Pricing"
                           aria-label="Product pricing"
                           title="Product pricing"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           Pricing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          href="/About"
                           aria-label="About us"
                           title="About us"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           About us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          href="/signup"
                           className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Sign up
-                        </a>
+                          Get Started
+                        </Link>
                       </li>
                     </ul>
                   </nav>
