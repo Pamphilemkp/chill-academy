@@ -1,6 +1,11 @@
 "use client"
 import React, { useState } from 'react';
 
+export const metadata = {
+  title: 'Faqs',
+  description: 'Explore our comprehensive FAQ section to find answers to commonly asked questions about Chill Academy, providing valuable insights and information to enhance your understanding of our offerings and services...',
+};
+
 export default function Home() {
 
     const faqData = [
