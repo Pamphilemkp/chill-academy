@@ -6,8 +6,8 @@ import Head from 'next/head';
 
 export const metadata = {
   title: {
-    template: '%s | Chill Academy where ideas come to life',
-    default: 'Chill Academy where ideas come to life',
+    template: '%s | Chill Academy where ideas get life',
+    default: 'Chill Academy where ideas get life',
   },
   description: 'The official Chill Academy overview where we show you how we can make you more brighter by giving a life to your idea',
   metadataBase: new URL('https://chillacademy.com'),
