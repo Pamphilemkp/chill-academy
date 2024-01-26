@@ -10,13 +10,13 @@ const Contact = () => {
           <div className=" bg-blue-100 dark:bg-gray-900  md:col-span-4 p-4  dark:text-white ">
             <div>
               <div>
-                <span class="block mb-2 text-base font-semibold text-primary">
+                <span className="block mb-2 text-base font-semibold text-primary">
                   Contact Us
                 </span>
-                <h2 class="text-dark  mb-3 text-[32px] font-bold uppercase sm:text-[14px] lg:text-[15px] xl:text-[18px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                <h2 className="text-dark  mb-3 text-[32px] font-bold uppercase sm:text-[14px] lg:text-[15px] xl:text-[18px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
                   Let's Bring Your Vision to Life - Contact Chill Academy Today!
                 </h2>
-                <p class="text-sm leading-relaxed text-body-color dark:text-dark-6 mb-2">
+                <p className="text-sm leading-relaxed text-body-color dark:text-dark-6 mb-2">
                   Are you ready to transform your ideas into dynamic web and
                   mobile applications? At Chill Academy, we specialize in turning
                   visions into reality. Whether you're looking for innovative
@@ -27,8 +27,8 @@ const Contact = () => {
                   excellence!
                 </p>
               
-                <div class="mb-2 flex w-full max-w-[370px]">
-                  <div class="bg-primary/5 text-primary mr-2 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[20px] sm:max-w-[40px]">
+                <div className="mb-2 flex w-full max-w-[370px]">
+                  <div className="bg-primary/5 text-primary mr-2 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[20px] sm:max-w-[40px]">
                     <svg
                       width="20"
                       height="20"
@@ -57,17 +57,17 @@ const Contact = () => {
                       </defs>
                     </svg>
                   </div>
-                  <div class="w-full">
-                    <h4 class="mb-1 text-sm font-bold text-dark dark:text-white">
+                  <div className="w-full">
+                    <h4 className="mb-1 text-sm font-bold text-dark dark:text-white">
                       Phone Number
                     </h4>
-                    <p class="text-sm text-body-color dark:text-dark-6">
+                    <p className="text-sm text-body-color dark:text-dark-6">
                       (+62)81 414 257 9980
                     </p>
                   </div>
                 </div>
-                <div class="mb-4 flex w-full max-w-[370px]">
-                  <div class="bg-primary/5 text-primary mr-2 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[20px] sm:max-w-[40px]">
+                <div className="mb-4 flex w-full max-w-[370px]">
+                  <div className="bg-primary/5 text-primary mr-2 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[20px] sm:max-w-[40px]">
                     <svg
                       width="20"
                       height="20"
@@ -81,11 +81,11 @@ const Contact = () => {
                       />
                     </svg>
                   </div>
-                  <div class="w-full">
-                    <h4 class="mb-1 text-sm font-bold text-dark dark:text-white">
+                  <div className="w-full">
+                    <h4 className="mb-1 text-sm font-bold text-dark dark:text-white">
                       Email Address
                     </h4>
-                    <p class="text-sm text-body-color dark:text-dark-6">
+                    <p className="text-sm text-body-color dark:text-dark-6">
                       info@yourdomain.com
                     </p>
                   </div>
@@ -118,42 +118,42 @@ const Contact = () => {
                 <div className="md:flex md:items-center"></div>
                 <a
                   href="#_"
-                  class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
+                  className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
                 >
-                  <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gradient-to-r  from-[#468ef9] to-[#0c66ee]  border border-[#0c66ee] group-hover:h-full"></span>
-                  <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                  <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gradient-to-r  from-[#468ef9] to-[#0c66ee]  border border-[#0c66ee] group-hover:h-full"></span>
+                  <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                     <svg
-                      class="w-5 h-5 text-green-400"
+                      className="w-5 h-5 text-green-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       ></path>
                     </svg>
                   </span>
-                  <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                  <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
                     <svg
-                      class="w-5 h-5 text-green-400"
+                      className="w-5 h-5 text-green-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       ></path>
                     </svg>
                   </span>
-                  <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                  <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                   Begin Your Digital Journey
                   </span>
                 </a>
