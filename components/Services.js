@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="p-6 my-6 dark:bg-gray-800 dark:text-gray-100 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 border border-purple-600 text-blue-800">
+    <section className="p-6 my-6 dark:bg-gray-800 dark:text-gray-100 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900  text-blue-800">
       <div className="container p-4 mx-auto text-center">
-        <h2 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white mb-10 text-white">
+        <h2 className="    text-6xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
           Our services statistics
         </h2>
       </div>
-      <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
+      <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 mt-14">
         <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400 ">
+          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400 w-[50%] max-h-[200px] ">
             <Image
               className=" rounded-full mb-10"
               src="/images/trolley.gif"
               alt="shopping trolly image gif"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
             />
           </div>
           <div className="flex flex-col justify-center align-middle">
@@ -43,8 +43,8 @@ const Services = () => {
             <p className="capitalize">New customers/Month</p>
           </div>
         </div>
-        <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 ">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400">
+        <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 max-h-[250px] ">
+          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400 w-[50%] max-h-[230px] ">
             <Image
               className="rounded-full mb-10"
               src="/images/compter.gif"
@@ -58,8 +58,8 @@ const Services = () => {
             <p className="capitalize">Growth</p>
           </div>
         </div>
-        <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 ">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400">
+        <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 max-h-[250px] ">
+          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400 w-[50%] max-h-[230px]">
             <Image
               className=" rounded-full mb-10"
               src="/images/bounceclick.gif"

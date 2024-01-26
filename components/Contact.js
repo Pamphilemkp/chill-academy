@@ -16,10 +16,10 @@ const Contact = () => {
             </div>
           <form className="md:col-span-8 p-10  w-[80%] mx-auto">
             <div className="flex flex-wrap -mx-3  mb-6">
-              <div className="w-full md:w-1/2 mb-6 pr-4 md:mb-0 ">
+              <div className="w-full md:w-1/2 mb-6 pr-0 md:pr-6 md:mb-0 ">
                 <Input color="blue" label="First Name" />
               </div>
-              <div className="w-full md:w-1/2 pl-4 ">
+              <div className="w-full md:w-1/2 pl-0 md:pl-4 ">
                 <Input color="blue" label="Last Name" />
               </div>
             </div>

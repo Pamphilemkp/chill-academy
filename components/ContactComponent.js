@@ -13,7 +13,7 @@ const Contact = () => {
                 <span class="block mb-2 text-base font-semibold text-primary">
                   Contact Us
                 </span>
-                <h2 class="text-dark dark:text-white mb-3 text-[32px] font-bold uppercase sm:text-[14px] lg:text-[15px] xl:text-[18px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                <h2 class="text-dark  mb-3 text-[32px] font-bold uppercase sm:text-[14px] lg:text-[15px] xl:text-[18px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
                   Let's Bring Your Vision to Life - Contact Chill Academy Today!
                 </h2>
                 <p class="text-sm leading-relaxed text-body-color dark:text-dark-6 mb-2">

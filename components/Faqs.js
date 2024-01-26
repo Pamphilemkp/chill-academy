@@ -67,7 +67,7 @@ const Faqs = () => {
           <div className="container px-6 py-12 mx-auto">
             <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Frequently asked questions</h1>
     
-            <div className="container mt-8 space-y-8 lg:mt-12 ">
+            <div className="container mt-8  space-y-8 lg:mt-12 ">
               {faqData.map((item, index) => (
                 <div key={index} className="p-8 bg-gray-100 rounded-lg dark:bg-gray-900">
                   <button

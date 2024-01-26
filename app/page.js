@@ -16,7 +16,7 @@ export default function Home() {
       <Service />
       <DetailServices />
       <HomeFaqs />
-      <div className=" bg-gradient-to-r from-purple-500 to-blue-800 border border-purple-600 ">
+      <div >
         <Services />
         <Partners />
       </div>
