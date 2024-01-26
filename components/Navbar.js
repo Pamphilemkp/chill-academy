@@ -45,7 +45,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Home page"
                 title="Home page"
-                className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:shadow-md inline-block"
                  : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
               >
                 Home
@@ -56,10 +56,10 @@ const Navbar = () => {
                 href="/Features"
                 aria-label="Our product"
                 title="Our product"
-                className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:shadow-md inline-block"
                  : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
               >
-                Features & Products
+                Products
               </Link>
             </li>
             <li>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 href="/Pricing"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"} >
                 Pricing
               </Link>
@@ -77,8 +77,8 @@ const Navbar = () => {
                 href="/About"
                 aria-label="About us"
                 title="About us"
-                className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}>
+                className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 min-w-[100px]  text-center transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300 min-w-[100px]  text-center py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}>
                 About us
               </Link>
             </li>
@@ -87,13 +87,13 @@ const Navbar = () => {
                 href="/Faqs"
                 aria-label="Faqs"
                 title="Faqs"
-                className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
+                className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:shadow-md inline-block"
                 : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}   >
                Faqs
               </Link>
             </li>
           </ul>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          <ul className="flex items-center  space-x-8 lg:flex">
             <li>
               <div
                 className="items-center flex-shrink-0 hidden lg:flex"
@@ -102,26 +102,18 @@ const Navbar = () => {
                 <button className="self-center px-4 py-2 text-white rounded">
                   <ThemeSwitcher />
                 </button>
-                <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
+                <Link
+                href="/Contact"
+                aria-label="Contact"
+                title="Contact">
+                <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-4 py-4 bg-gradient-to-r  from-[#468ef9] to-[#0c66ee]  border border-[#0c66ee] text-white">
                   Get Started
                 </button>
+                </Link>
               </div>
-              <button className="p-4 lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-6 h-6 dark:text-gray-100"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
+              <button className="self-center px-4 py-2 text-white rounded lg:hidden md:hidden">
+                  <ThemeSwitcher />
+                </button>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -147,8 +139,8 @@ const Navbar = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
-                <div className="p-5 bg-white border rounded shadow-sm">
+              <div className="absolute top-0 left-0 w-full rounded-3xl">
+                <div className="p-5 bg-white rounded-3xl dark:dark:bg-gray-800 border  shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <a
@@ -200,8 +192,8 @@ const Navbar = () => {
                           href="/"
                           aria-label="Home page"
                           title="Home page"
-                          className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                          className={ currentRoute === '/' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 w-[100%] text-center hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[rgb(70,142,249)] to-[#0c66ee] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           Home
                         </Link>
@@ -211,8 +203,8 @@ const Navbar = () => {
                           href="/Faqs"
                           aria-label="Faqs"
                           title="Faqs"
-                          className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                          className={ currentRoute === '/Faqs' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           Faqs
                         </Link>
@@ -222,10 +214,10 @@ const Navbar = () => {
                           href="/Features"
                           aria-label="Our product"
                           title="Our product"
-                          className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                          className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 w-[100%] text-center hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88]    dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
-                          Features & products
+                          products
                         </Link>
                       </li>
                       <li>
@@ -233,8 +225,8 @@ const Navbar = () => {
                           href="/Pricing"
                           aria-label="Product pricing"
                           title="Product pricing"
-                          className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                          className={ currentRoute === '/Pricing' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 w-[100%] text-center  hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           Pricing
                         </Link>
@@ -244,18 +236,18 @@ const Navbar = () => {
                           href="/About"
                           aria-label="About us"
                           title="About us"
-                          className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"
-                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
+                          className={ currentRoute === '/About' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 w-[100%] text-center hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88]  dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"
+                          : "font-medium tracking-wide text-gray-800 rounded-full transition duration-300  px-4 py-2 hover:bg-gradient-to-r from-[#468ef9] to-[#0c66ee] dark:text-white w-[100%] text-center hover:bg-[#0c66ee] hover:text-white hover:border-transparent hover:shadow-md inline-block"}
                         >
                           About us
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/signup"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
+                          href="/Contact"
+                          className="inline-flex items-center justify-center w-full text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee]  border border-[#0c66ee] text-white"
+                          aria-label="Contact"
+                          title="Contact"
                         >
                           Get Started
                         </Link>
