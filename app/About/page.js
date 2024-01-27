@@ -10,5 +10,4 @@ export default function Home() {
   return (
     <AboutComponent />
   )
-   
 }
