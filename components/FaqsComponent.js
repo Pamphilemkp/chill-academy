@@ -64,13 +64,13 @@ const FaqsComponent = () => {
       };
 
     return (
-      <div className="my-8 space-y-8 lg:mt-12">
-            <h1>Explore our comprehensive FAQ section to find answers to commonly asked questions about Chill Academy,
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 my-8 space-y-8 lg:mt-12">
+            <h1 >Explore our comprehensive FAQ section to find answers to commonly asked questions about <span className='text-header-gradient-2 font-bold'>Chill Academy</span>,
             providing valuable insights and information to enhance your understanding of our offerings and services.</h1>
 
             <div className="mt-8 space-y-8 lg:mt-12">
               {faqData.map((item, index) => (
-                <div key={index} className="p-8 bg-gray-100 rounded-lg dark:bg-gray-900">
+                <div key={index} className="p-8 bg-white rounded-lg dark:bg-gray-900">
                   <button
                     onClick={() => toggleQuestion(index)}
                     className="flex items-center justify-between w-full"

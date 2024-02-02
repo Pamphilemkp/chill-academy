@@ -4,14 +4,14 @@ import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
-
+import ChillLogo from '../public/images/Chill logo.svg'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentRoute = usePathname();
 
   return (
     <div className="bg-blue-100 dark:bg-gray-800 dark:text-black text-white relative z-50">
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 py-1 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
             href="/"
@@ -19,25 +19,18 @@ const Navbar = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <div className="rounded-circle overflow-hidden">
-              <style>{`
-                .rounded-circle {
-                  border-radius: 50%;
-                  width: auto; 
-                  height: auto; 
-                }
-              `}</style>
+            <div className="rounded-circle mt-4 overflow-hidden">
+            
               <Image
-                src="/images/Chill logo.jpg"
+                src={ChillLogo}
                 alt="Logo"
-                width={50}
-                height={50}
-                className="rounded-circle"
+                
+                className="rounded-circle h-32 w-32"
               />
             </div>
-            <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide  uppercase">
+            {/* <span className="ml-2 text-xl text-header-gradient-2 font-bold tracking-wide  uppercase">
               Chill Academy
-            </span>
+            </span> */}
           </Link>
           <ul className="flex items-center hidden space-x-4 lg:flex">
             <li>
@@ -140,7 +133,7 @@ const Navbar = () => {
             </button>
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full rounded-3xl">
-                <div className="p-5 bg-white rounded-3xl dark:dark:bg-gray-800 border  shadow-sm">
+                <div className="p-5 bg-blue-100 rounded-3xl dark:dark:bg-gray-800 border  shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <a
