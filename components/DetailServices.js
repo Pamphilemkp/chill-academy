@@ -116,7 +116,7 @@ const services = [
 const DetailServices = () => {
   return (
     <>
-      <section className="text-gray-200 bg-gray-900">
+      <section  className="text-gray-200 bg-gray-900" id="services">
         <div className="max-w-6xl mx-auto px-5 py-12">
           <div className="text-center mb-20">
           <div className="flex justify-center items-center ">

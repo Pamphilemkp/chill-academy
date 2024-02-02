@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <head>
         <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
       </head>
-      <body className="min-h-screen mx-auto max-w-6xl flex flex-col bg-white   dark:bg-gray-800">
+      <body className="min-h-screen mx-auto max-w-6xl flex flex-col bg-blue-100   dark:bg-gray-800">
        <main className={poppins.className}>
         <Provider>
           <Navbar />
