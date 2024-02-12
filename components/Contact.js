@@ -1,8 +1,87 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "@material-tailwind/react";
 import { Textarea } from "@material-tailwind/react";
 const Contact = () => {
+
+ const [firstName, SetFirstName] = useState('');
+ const [lastName, SetLastName] = useState('');
+ const [email, SetEmail] = useState('');
+ const [message, SetMessage] = useState('');
+ const [errors, setErrors] = useState({});
+
+
+// check if the data collected from the form meet the requirement
+
+ const validateForm = () => {
+  let formIsValid = true;
+  const newErrors = {};
+
+              // for first name
+              if (firstName.length === 1 || firstName.length <= 2) {
+                formIsValid = false;
+                newErrors.firstName = 'Please your First Name should at least have 2 letters';
+              }
+          
+              if (firstName.trim() === '') {
+                formIsValid = false;
+                newErrors.firstName = 'Please enter your First Name ';
+          
+              }
+
+            // for last name
+            if (lastName.length === 1 || lastName.length <= 3) {
+              formIsValid = false;
+              newErrors.lastName = 'Please your Last Name should at least have 2 letters';
+            }
+        
+            if (lastName.trim() === '') {
+              formIsValid = false;
+              newErrors.firstName = 'Please enter your Last Name';
+        
+            }
+      
+            // for email
+            if (!email) {
+              formIsValid = false;
+              newErrors.email = 'Please enter your Email';
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+              formIsValid = false;
+              newErrors.email = 'Please enter a valid Email';
+            }
+
+            // for comment
+            if (message.length === 1 || message.length <= 3) {
+              formIsValid = false;
+              newErrors.message = 'Please your comment should at least have 3 letters';
+            }
+        
+            if (!comment) {
+              formIsValid = false;
+              newErrors.message = 'Please enter your message';
+            }
+  
+      setErrors(newErrors);
+      return formIsValid;
+ }
+
+
+
+ // submitting the data if collected information is correct
+ const handleSubmit= (e) => {
+  e.preventDefault();
+  e.preventDefault();
+    
+  if (validateForm()) {
+    // Handle form submission if everything is ok send to the server
+
+  navigate('/');
+
+  }
+
+ };
+
+
   return (
     <div>
       <div className="max-w-screen-lg mx-auto p-5">
@@ -14,17 +93,33 @@ const Contact = () => {
               <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#468ef9] to-[#0c66ee] inline-flex"></div>
             </div>
             </div>
-          <form className="md:col-span-8 p-10  w-[80%] mx-auto">
+          <form className="md:col-span-8 p-10  w-[80%] mx-auto" onSubmit={handleSubmit}>
             <div className="flex flex-wrap -mx-3  mb-6">
               <div className="w-full md:w-1/2 mb-6 pr-0 md:pr-6 md:mb-0 ">
-                <Input color="blue" label="First Name" />
+                <Input
+                color="blue"
+                label="First Name"
+                value={firstName}
+                onChange={(e) => SetFirstName(e.target.value)}
+                />
               </div>
               <div className="w-full md:w-1/2 pl-0 md:pl-4 ">
-                <Input color="blue" label="Last Name" />
+                <Input
+                color="blue"
+                label="Last Name"
+                value={lastName}
+                onChange={(e) => SetLastName(e.target.value)}
+               />
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <Input size="md" label="Email" color="blue" />
+              <Input
+              size="md"
+              label="Email"
+              color={errors? "red": "blue"}
+              value={email}
+              onChange={(e) => SetEmail(e.target.value)}
+              />
             </div>
 
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -33,6 +128,8 @@ const Contact = () => {
                 className="text-xl text-white"
                 label="Message "
                 size="md"
+                value={message}
+                onChange={(e) => SetMessage(e.target.value)}
               />
               <div className="flex justify-center w-full mt-8">
                 <div className="md:flex md:items-center"></div>
@@ -73,9 +170,9 @@ const Contact = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                  <button type="submit" className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                   Begin Your Digital Journey
-                  </span>
+                  </button>
                 </a>
               </div>
             </div>
