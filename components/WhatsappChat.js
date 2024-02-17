@@ -10,8 +10,19 @@ const WhatsappChat = () => {
         accountName="Chill Academy"
         statusMessage={"We're here to help! Expect a reply within the hour."}
         avatar={`/images/Chill_Logo.png`}
-        chatMessage="Welcome! 🌟 We're here to support you every step of the way. What can we assist you with today?"
+        chatMessage="Hi! 😊 We love helping out! What can we do for you today? "
         darkMode={true}
+        buttonStyle={{
+          background: 'linear-gradient(to right, #007BFF, #00BFFF)',
+        }}
+        chatboxStyle={{
+          background: '#121212',
+          color: '#ffffff',
+        }}
+        notificationStyle={{
+          background: 'linear-gradient(to bottom, #003366, #000033)',
+          color: '#ffffff',
+        }}
       />
     </div>
   );
