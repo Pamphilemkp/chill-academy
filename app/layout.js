@@ -2,6 +2,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Provider from "@/components/Provider";
 import Navbar from "@/components/Navbar";
+import WhatsappChat from '@/components/WhatsappChat';
 import Head from 'next/head';
 
 export const metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Provider>
           <Navbar />
           {children}
+          <WhatsappChat/>
         </Provider>
         </main>
       </body>
