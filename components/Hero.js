@@ -50,8 +50,8 @@ const Hero = () => {
               <span className="bg-clip-text text-transparent font-bold bg-gradient-to-r from-blue-500 to-teal-400  text-lg">
                 innovative solutions
               </span>
-              . We're not just developers; we're partners in turning your ideas
-              into reality. Let's build something extraordinary together
+             {` . We're not just developers; we're partners in turning your ideas
+              into reality. Let's build something extraordinary together`}
             </p>
 
             <div

@@ -44,10 +44,10 @@ const Section = () => {
                       Listening:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                      " Our formula is simple – we listen, we solve. Your project
+                      {`" Our formula is simple – we listen, we solve. Your project
                       becomes our priority, and we commit to delivering the best
                       solution possible. We actively listen to your ideas and
-                      requirements to fully grasp your vision. "
+                      requirements to fully grasp your vision. "`}
                     </p>
                   </div>
                   <div className="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
@@ -71,8 +71,8 @@ const Section = () => {
                       Problem-Solving:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                     " We approach your project as our own, taking ownership of
-                      the challenges and finding the best solutions. "
+                     {`" We approach your project as our own, taking ownership of
+                      the challenges and finding the best solutions. "`}
                     </p>
                   </div>
                   <div className="w-72 h-20 bg-[var(--color-2)] absolute -bottom-6"></div>
@@ -96,8 +96,8 @@ const Section = () => {
                       Reliability:
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-100 mt-2">
-                      " You can count on us to deliver your project on time and
-                      within budget. "
+                     {` " You can count on us to deliver your project on time and
+                      within budget. "`}
                     </p>
                   </div>
                 </div>

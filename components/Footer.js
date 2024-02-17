@@ -32,7 +32,7 @@ const Footer = () => {
           </a>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm dark:text-white">
-            CHILL ACADEMY is here to make tech easy for everyone. <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">Our mission is simple:</span> guide you through the world of technology in a fun and accessible way. Whether you're new or curious, we're your partners in exploring tech. Let's turn your curiosity into knowledge, making the tech journey personal and enjoyable together.
+            {`CHILL ACADEMY is here to make tech easy for everyone. `}<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">Our mission is simple:</span> guide you through the world of technology in a fun and accessible way. Whether you're new or curious, we're your partners in exploring tech. Let's turn your curiosity into knowledge, making the tech journey personal and enjoyable together.
             </p>
           </div>
         </div>

@@ -395,7 +395,7 @@ const Service = () => {
                             <div>
                               <p className=" lg:text-xs md:text-sm text-xs">
                                 {" "}
-                                Let's achieve greatness together.
+                                {`Let's achieve greatness together.`}
                               </p>
                             </div>
                           </div>

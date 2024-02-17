@@ -14,17 +14,17 @@ const Contact = () => {
                   Contact Us
                 </span>
                 <h2 className="text-dark  mb-3 text-[32px] font-bold uppercase sm:text-[14px] lg:text-[15px] xl:text-[18px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
-                  Let's Bring Your Vision to Life - Contact Chill Academy Today!
+                  {`Let's Bring Your Vision to Life - Contact Chill Academy Today!`}
                 </h2>
                 <p className="text-sm leading-relaxed text-body-color dark:text-dark-6 mb-2">
-                  Are you ready to transform your ideas into dynamic web and
+                  {`Are you ready to transform your ideas into dynamic web and
                   mobile applications? At Chill Academy, we specialize in turning
                   visions into reality. Whether you're looking for innovative
                   web solutions, mobile app development, or effective SEO
                   strategies, our team is here to guide you every step of the
                   way. Don’t wait to make your ideas a success. Get in touch
                   with us now and take the first step towards digital
-                  excellence!
+                  excellence!`}
                 </p>
               
                 <div className="mb-2 flex w-full max-w-[370px]">

@@ -126,7 +126,7 @@ const DetailServices = () => {
             </p>
           </div>
             <h1 className="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">Discover Our <span className='text-header-gradient-2'>Tech Solutions</span> - Your Gateway to Digital Excellence</h1>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Step into a world where your digital aspirations meet our technological prowess. At Chill Academy, we're not just about providing services; we're about crafting solutions that resonate with your unique needs. From developing cutting-edge applications to enhancing your online presence, our team is dedicated to elevating your project to new heights. Embark on a journey with us where innovation, efficiency, and client-focused solutions converge.</p>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">{`Step into a world where your digital aspirations meet our technological prowess. At Chill Academy, we're not just about providing services; we're about crafting solutions that resonate with your unique needs. From developing cutting-edge applications to enhancing your online presence, our team is dedicated to elevating your project to new heights. Embark on a journey with us where innovation, efficiency, and client-focused solutions converge.`}</p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#468ef9] to-[#0c66ee] inline-flex"></div>
             </div>
