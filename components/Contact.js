@@ -1,14 +1,43 @@
 "use client";
-import React, { useState } from "react";
-import { Input } from "@material-tailwind/react";
-import { Textarea } from "@material-tailwind/react";
+import React, { useState, useEffect } from "react";
+import { Input, Button,Textarea } from "@material-tailwind/react";
+import { useForm, Controller } from "react-hook-form";
+
 const Contact = () => {
 
  const [firstName, SetFirstName] = useState('');
  const [lastName, SetLastName] = useState('');
  const [email, SetEmail] = useState('');
  const [message, SetMessage] = useState('');
- const [errors, setErrors] = useState({});
+ const [error, setErrors] = useState({});
+
+
+ // 
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    getValues,
+    watch,
+    unregister,
+    reset,
+  } = useForm({
+    mode: "onTouched",
+
+  });
+
+
+  //  initialise the components with the use components
+  const domain = watch("domain");
+  
+  // * Remove from FORM
+  useEffect(() => {
+    if (domain !== "others") {
+      unregister("otherdomainname");
+    }
+  }, [domain, unregister]);
+
+  const onSubmit = (data) => console.log(data);
 
 
 // check if the data collected from the form meet the requirement
@@ -68,18 +97,17 @@ const Contact = () => {
 
 
  // submitting the data if collected information is correct
- const handleSubmit= (e) => {
-  e.preventDefault();
-  e.preventDefault();
-    
-  if (validateForm()) {
-    // Handle form submission if everything is ok send to the server
+    const handleSubmited= (e) => {
+      e.preventDefault();
+        
+      if (validateForm()) {
+        // Handle form submission if everything is ok send to the server
 
-  navigate('/');
+      navigate('/');
 
-  }
+      }
 
- };
+    };
 
 
   return (
@@ -93,15 +121,37 @@ const Contact = () => {
               <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#468ef9] to-[#0c66ee] inline-flex"></div>
             </div>
             </div>
-          <form className="md:col-span-8 p-10  w-[80%] mx-auto" onSubmit={handleSubmit}>
+          <form className="md:col-span-8 p-10  w-[80%] mx-auto" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-wrap -mx-3  mb-6">
               <div className="w-full md:w-1/2 mb-6 pr-0 md:pr-6 md:mb-0 ">
+              <Controller
+              name="Username"
+              rules={{
+                required: "Username is Required",
+                minLength: {
+                  value: 3,
+                  message: "Minimum 3 characters required",
+                },
+              }}
+              control={control}
+              render={({ field }) => (
                 <Input
+                color="blue"
+                label="First Name"
+                  {...field}
+                  error={Boolean(errors?.Username?.message)}
+                />
+              )}
+            />
+            {errors?.Username?.message && (
+              <span className="error-text">{errors?.Username?.message}</span>
+            )}
+                {/* <Input
                 color="blue"
                 label="First Name"
                 value={firstName}
                 onChange={(e) => SetFirstName(e.target.value)}
-                />
+                /> */}
               </div>
               <div className="w-full md:w-1/2 pl-0 md:pl-4 ">
                 <Input
@@ -113,17 +163,43 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <Input
+            <Controller
+              name="email"
+              control={control}
+              rules={{
+                required: "Email ID is Required",
+                pattern: {
+                  value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+                  message: "Email ID is invaild",
+                },
+              }}
+              render={({ field }) => (
+                <Input
+                  type="email"
+                  size="md"
+                  label="Email"
+                  color={"blue"}
+                  {...field}
+                  error={Boolean(errors?.email?.message)}
+                />
+              )}
+            />
+            {errors?.email?.message && (
+              <span className="error-text">{errors?.email?.message}</span>
+            )}
+
+              {/* <Input
               size="md"
               label="Email"
-              color={errors? "red": "blue"}
+              color={"blue"}
               value={email}
               onChange={(e) => SetEmail(e.target.value)}
-              />
+              /> */}
             </div>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <Textarea
+              error={true}
                 color="blue"
                 className="text-xl text-white"
                 label="Message "
@@ -133,8 +209,7 @@ const Contact = () => {
               />
               <div className="flex justify-center w-full mt-8">
                 <div className="md:flex md:items-center"></div>
-                <a
-                  href="#_"
+                <div
                   className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
                 >
                   <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gradient-to-r  from-[#468ef9] to-[#0c66ee]  border border-[#0c66ee] group-hover:h-full"></span>
@@ -170,10 +245,10 @@ const Contact = () => {
                       ></path>
                     </svg>
                   </span>
-                  <button type="submit" className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Begin Your Digital Journey
-                  </button>
-                </a>
+                  <Button type="submit" className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                    Begin Your Digital Journey
+                  </Button>
+                </div>
               </div>
             </div>
           </form>
