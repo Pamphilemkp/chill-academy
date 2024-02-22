@@ -3,20 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.8",
     "flowbite-react": "^0.7.0",
+    "i18next": "^23.9.0",
+    "i18next-resources-to-backend": "^1.2.0",
     "next": "14.0.3",
+    "next-i18n-router": "^5.3.1",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-floating-whatsapp": "^5.0.8",
+    "react-i18next": "^14.0.5",
     "react-icons": "^4.12.0",
     "react-player": "^2.13.0",
     "typewriter-effect": "^2.21.0"
@@ -25,6 +29,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
+    "i18nexus-cli": "^3.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
   }

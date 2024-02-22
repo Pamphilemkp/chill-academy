@@ -1,9 +1,13 @@
+/* eslint-disable @next/next/no-async-client-component */
 "use client";
 import React from "react";
 import Image from "next/image";
 import bulb from "../assets/images/bulb.gif";
 import Typewriter from "typewriter-effect";
-const Hero = () => {
+import { useTranslation } from 'react-i18next';
+
+const Hero =  () => {
+  const { t } = useTranslation();
 
   return (
     <div className="bg-blue-100 dark:bg-gray-800 text-gray-100 custom-box pb-4 ">
@@ -17,7 +21,7 @@ const Hero = () => {
             bis_skin_checked="1"
           >
             <h1 className="text-5xl font-bold leading sm:text-6xl text-black dark:text-white">
-              Welcome to
+              {t('welcome')}
               <div className="text-header-gradient mt-4 lg:mt-2 uppercase">
                 <Typewriter
                   options={{
@@ -31,7 +35,7 @@ const Hero = () => {
             </h1>
             <div className="flex justify-center">
               <p className="mt-3 mb-8 text-lg sm:mb-12  text-gray-800 dark:text-white">
-                Where Ideas Come to Life
+               {t('slogan')}
               </p>
               <Image
                 src={bulb}
@@ -46,12 +50,11 @@ const Hero = () => {
               className="  mb-8 text-lg sm:mb-12  text-gray-800 dark:text-white "
               style={{ marginTop: "-40px"}}
             >
-              Empower your vision with our{" "}
+            {t('hero-vision1')}{" "}
               <span className="bg-clip-text text-transparent font-bold bg-gradient-to-r from-blue-500 to-teal-400  text-lg">
-                innovative solutions
+                {t('hero-vision2')}
               </span>
-             {` . We're not just developers; we're partners in turning your ideas
-              into reality. Let's build something extraordinary together`}
+              {t('hero-desc')}
             </p>
 
             <div
@@ -64,14 +67,14 @@ const Hero = () => {
                 href="#services"
                 className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
               >
-                Our Services
+                {t('services')}
               </a>
               <a
                 rel="noopener noreferrer"
                 href="/Contact"
                 className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-inherit dark:text-gradient-3  border border-[#0c66ee] flex items-center justify-center text-black text-bold text-gradient-3"
               >
-                Get Started
+              {t('starting')}
               </a>
             </div>
           </div>

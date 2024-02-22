@@ -58,7 +58,7 @@
 }
 
 .card-background{
-  background-image: url(../public/images/ServiceBackground.gif);
+  background-image: url(../../public/images/ServiceBackground.gif);
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;

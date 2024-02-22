@@ -3,14 +3,25 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Service from "@/components/Service";
-import Image from "next/image";
 import HomeFaqs from "@/components/HomeFaqs";
 import Services from "@/components/Services";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
-export default function Home() {
+import TranslationsProvider from '@/components/TranslationsProvider';
+import initTranslations from '../i18n';
+
+const i18nNamespaces = ['HomePage'];
+
+export default async function Home({ params: { locale } }) {
+
+  const { resources } = await initTranslations(locale, i18nNamespaces);
+
   return (
-    <>
+    <TranslationsProvider
+    namespaces={i18nNamespaces}
+      locale={locale}
+      resources={resources}
+    >
       <Hero />
       <Section />
       <Service />
@@ -22,6 +33,6 @@ export default function Home() {
       </div>
       <Contact/>
       <Footer />
-    </>
+    </TranslationsProvider>
   );
 }
