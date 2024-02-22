@@ -7,8 +7,11 @@ import SEO from "../public/images/Services/ServiceCardImages/SEOWeb.png";
 import LearningCode from "../public/images/Services/ServiceCardImages/Learning.png";
 import Innovation from "../public/images/Services/ServiceCardImages/Innovation.png";
 import greenTick from "../public/images/Services/green tick.png";
+import { useTranslation } from 'react-i18next';
+
 
 const Service = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative">
       <div className="card-background pb-8">
@@ -16,15 +19,15 @@ const Service = () => {
           <div className="flex justify-center items-center ">
             <Image src={rightArrow} alt="rightarrow" width={50} height={10} />
             <p className="text-white text-opacity-90 -ml-2 font-bold">
-              OUR SERVICES
+              {t('services-component')}
             </p>
           </div>
           <h1 className="font-bold text-3xl text-opacity-90 text-wrap leading-relaxed w-80 text-center">
-            Your{" "}
+            {t('Your')}{" "}
             <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block">
-              <span className="relative text-white ">one-stop shop</span>
+              <span className="relative text-white ">{t('one-shop')}</span>
             </span>{" "}
-            for all your needs<span className="text-red-500">.</span>
+            {t('for-your-need')}<span className="text-red-500">.</span>
           </h1>
         </div>
 
@@ -42,10 +45,10 @@ const Service = () => {
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
-                      Web & Mobile Development
+                      {t('Web-Mobile-Development')}
                     </h3>
                     <h4 className="lg:text-xs md:text-base -mt-1 text-xs">
-                      Bring Your Digital Dreams to Life.
+                      {t('Web-Mobile-Development-desc')}
                     </h4>
                     <ul className=" flex flex-col gap-2 ">
                       <li className="flex  ">
@@ -59,13 +62,13 @@ const Service = () => {
                           <div className="flex lg:gap-3 md:gap-3 gap-3 ">
                             <div className="">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs  ">
-                                Web Apps:
+                                {t('Web-Apps:')}
                               </span>
                             </div>
                             <div className="flex justify-center items-center ">
                               {" "}
                               <p className="lg:text-xs md:text-sm text-xs">
-                                Tailored to fit your unique ideas.
+                                {t('Web-Apps-desc')}
                               </p>
                             </div>
                           </div>
@@ -82,12 +85,12 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="flex w-[35%] lg:w-[40%] md:w-[40%] ">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs">
-                                Mobile Apps:
+                                {t('Mobile-Apps')}
                               </span>{" "}
                             </div>
                             <div className="flex ">
                               <p className="lg:text-xs md:text-sm text-xs">
-                                Connect with your audience anywhere, anytime.
+                                {t('Mobile-Apps-desc')}
                               </p>
                             </div>
                           </div>
@@ -107,13 +110,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="w-[32%] lg:w-[36%] md:w-[36%]">
                               <span className="font-bold text-header-gradient-2 text-xs lg:text-xs md:text-sm">
-                                Websites:
+                                {t('Websites')}
                               </span>{" "}
                             </div>
                             <div>
                               <p className=" lg:text-xs md:text-sm text-xs">
                                 {" "}
-                                Visually stunning and user-friendly designs.
+                                {t('Websites-desc')}
                               </p>
                             </div>
                           </div>
@@ -136,10 +139,10 @@ const Service = () => {
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
-                    Enhancement & Support
+                    {t('service-1')}
                     </h3>
                     <h4 className="lg:text-xs md:text-base -mt-1 text-xs">
-                    Tech Solutions at Your Fingertips
+                    {t('service-1-desc')}
                     </h4>
                     <ul className=" flex flex-col gap-2 ">
                       <li className="flex  ">
@@ -159,7 +162,7 @@ const Service = () => {
                             <div className="flex justify-center items-center ">
                               {" "}
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Propel your site to the top of search results.
+                                {t('seo-boost')}
                               </p>
                             </div>
                           </div>
@@ -176,12 +179,12 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="flex w-[27%] lg:w-[30%] md:w-[40%] ">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs">
-                              Upgrade Projects:
+                              {t('Upgrade-Projects:')}
                               </span>{" "}
                             </div>
                             <div className="flex ">
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Breathe new life into your existing tech.
+                              {t('Upgrade-Projects-desc')}
                               </p>
                             </div>
                           </div>
@@ -201,13 +204,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="w-[24%] lg:w-[29%] md:w-[36%]">
                               <span className="font-bold text-header-gradient-2 text-xs lg:text-xs md:text-sm">
-                              IT Support:
+                              {t('IT-Support')}
                               </span>{" "}
                             </div>
                             <div>
-                              <p className=" lg:text-xs md:text-sm text-xs">
+                              <p className="lg:text-xs md:text-sm text-xs">
                                 {" "}
-                                Quick, hassle-free tech assistance.
+                                {t('IT-Support-desc')}
                               </p>
                             </div>
                           </div>
@@ -230,10 +233,10 @@ const Service = () => {
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
-                    Learning & Growth
+                    {t('service-2')}
                     </h3>
                     <h4 className="lg:text-xs md:text-base -mt-1 text-xs">
-                    Empower Your Tech Journey
+                      {t('service-2-desc')}
                     </h4>
                     <ul className=" flex flex-col gap-2 ">
                       <li className="flex  ">
@@ -247,13 +250,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-0  ">
                             <div className="">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs  ">
-                              Web Dev Learning:
+                              {t('service3')}
                               </span>
                             </div>
                             <div className="flex justify-center items-center ">
                               {" "}
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Step-by-step courses for aspiring developers.
+                              {t('service3-desc')}
                               </p>
                             </div>
                           </div>
@@ -270,12 +273,12 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="flex w-[45%] lg:w-[51%] md:w-[50%] ">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs">
-                              Tech Tricks:
+                              {t('Tech-Tricks')}
                               </span>{" "}
                             </div>
                             <div className="flex ">
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Insider tips for getting the most out of popular platforms.
+                                {t('Tech-Tricks-desc')}
                               </p>
                             </div>
                           </div>
@@ -295,13 +298,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 gap-2">
                             <div className="w-[38%] lg:w-[44%] md:w-[45%]">
                               <span className="font-bold text-header-gradient-2 text-xs lg:text-xs md:text-sm">
-                              Software Deals:
+                              {t('Software-Deals')}
                               </span>{" "}
                             </div>
                             <div>
                               <p className=" lg:text-xs md:text-sm text-xs">
                                 {" "}
-                                Access top software without breaking the bank.
+                                {t('Software-Deals-desc')}
                               </p>
                             </div>
                           </div>
@@ -324,10 +327,10 @@ const Service = () => {
                   </div>
                   <div className="lg:w-[70%] md:w-[100%] flex flex-col justify-center text-white overflow-hidden p-2 gap-3 lg:gap-2 md:gap-2">
                     <h3 className="font-bold lg:text-sm md:text-lg   text-header-gradient-2 text-sm text-center md:text-left lg:text-left">
-                    Talent & Innovation
+                    {t('service-4')}
                     </h3>
                     <h4 className="lg:text-xs md:text-base -mt-1 text-xs">
-                    Unite with Tech Maestros
+                    {t('service-4-desc')}
                     </h4>
                     <ul className=" flex flex-col gap-2 ">
                       <li className="flex  ">
@@ -341,13 +344,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3  ">
                             <div className="">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs  ">
-                              Developer Hirings:
+                              {t('Developer-Hirings')}
                               </span>
                             </div>
                             <div className="flex justify-center items-center ">
                               {" "}
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Connect with skilled professionals.
+                              {t('Developer-Hirings-desc')}
                               </p>
                             </div>
                           </div>
@@ -364,12 +367,12 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 ">
                             <div className="flex w-[53%] lg:w-[52%] md:w-[62%] ">
                               <span className="font-bold text-header-gradient-2 lg:text-xs md:text-sm text-xs">
-                              Innovative Solutions:
+                              {t('Innovative-Solutions')}
                               </span>{" "}
                             </div>
                             <div className="flex ">
                               <p className="lg:text-xs md:text-sm text-xs">
-                              Creative approaches for complex challenges.
+                              {t('Innovative-Solutions-desc')}
                               </p>
                             </div>
                           </div>
@@ -389,13 +392,13 @@ const Service = () => {
                           <div className="flex lg:gap-0 md:gap-3 ">
                             <div className="w-[39%] lg:w-[38%] md:w-[36%]">
                               <span className="font-bold text-header-gradient-2 text-xs lg:text-xs md:text-sm">
-                              Partnership & Collaboration:
+                              {t('Partnership-Collaboration')}
                               </span>{" "}
                             </div>
                             <div>
                               <p className=" lg:text-xs md:text-sm text-xs">
                                 {" "}
-                                {`Let's achieve greatness together.`}
+                                {t("Partnership-Collaboration-desc")}
                               </p>
                             </div>
                           </div>
