@@ -14,7 +14,7 @@ const Contact = () => {
               <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#468ef9] to-[#0c66ee] inline-flex"></div>
             </div>
             </div>
-          <form className="md:col-span-8 p-10  w-[80%] mx-auto">
+          <form className="md:col-span-8 p-0 md:p-10 lg:p-10  md:w-[80%] lg:w-[80%] mx-auto mt-10">
             <div className="flex flex-wrap -mx-3  mb-6">
               <div className="w-full md:w-1/2 mb-6 pr-0 md:pr-6 md:mb-0 ">
                 <Input color="blue" label="First Name" />
