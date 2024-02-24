@@ -8,6 +8,7 @@ import HomeFaqs from "@/components/HomeFaqs";
 import Services from "@/components/Services";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
+import Testimonial from "../components/Testimonial";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <Section />
       <Service />
       <DetailServices />
+      <Testimonial />
       <HomeFaqs />
       <div >
         <Services />
