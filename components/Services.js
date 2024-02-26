@@ -5,7 +5,7 @@ const Services = () => {
     <section className="p-6 my-6 dark:bg-gray-800 dark:text-gray-100 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900  text-blue-800">
       <div className="container p-4 mx-auto text-center">
         <h2 className="    text-6xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
-          Our services statistics
+          {t('stat-services-heading')}
         </h2>
       </div>
       <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 mt-14">
@@ -21,7 +21,7 @@ const Services = () => {
           </div>
           <div className="flex flex-col justify-center align-middle">
             <p className="text-3xl font-semibold leadi">AVG. 200</p>
-            <p className="capitalize"> Projects Orders/Year</p>
+            <p className="capitalize"> {t('stat-services-1')}</p>
           </div>
         </div>
         <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 ">
@@ -40,7 +40,7 @@ const Services = () => {
           </div>
           <div className="flex flex-col justify-center align-middle">
             <p className="text-3xl font-semibold leadi">+ 10</p>
-            <p className="capitalize">New customers/Month</p>
+            <p className="capitalize">{t('stat-services-2')}</p>
           </div>
         </div>
         <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 max-h-[250px] ">
@@ -55,7 +55,7 @@ const Services = () => {
           </div>
           <div className="flex flex-col justify-center align-middle">
             <p className="text-3xl font-semibold leadi">172%</p>
-            <p className="capitalize">Growth</p>
+            <p className="capitalize">{t('stat-services-3')}</p>
           </div>
         </div>
         <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100 bg-blue-100 max-h-[250px] ">
@@ -70,7 +70,7 @@ const Services = () => {
           </div>
           <div className="flex flex-col justify-center align-middle">
             <p className="text-3xl font-semibold leadi">+17%</p>
-            <p className="capitalize">Bounce rate</p>
+            <p className="capitalize">{t('stat-services-4')}</p>
           </div>
         </div>
       </div>
