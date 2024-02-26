@@ -17,21 +17,21 @@ const Contact = () => {
           <form className="md:col-span-8 p-10  w-[80%] mx-auto">
             <div className="flex flex-wrap -mx-3  mb-6">
               <div className="w-full md:w-1/2 mb-6 pr-0 md:pr-6 md:mb-0 ">
-                <Input color="blue" label="First Name" />
+                <Input color="blue" label={t('contact-firstname')} />
               </div>
               <div className="w-full md:w-1/2 pl-0 md:pl-4 ">
-                <Input color="blue" label="Last Name" />
+                <Input color="blue" label={t('contact-lastname')}/>
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <Input size="md" label="Email" color="blue" />
+              <Input size="md" label={t('contact-email')} color="blue" />
             </div>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <Textarea
                 color="blue"
                 className="text-xl text-white"
-                label="Message "
+                label={t('contact-message')}
                 size="md"
               />
               <div className="flex justify-center w-full mt-8">
@@ -74,7 +74,7 @@ const Contact = () => {
                     </svg>
                   </span>
                   <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Begin Your Digital Journey
+                  {t('contact-submit')}
                   </span>
                 </a>
               </div>
