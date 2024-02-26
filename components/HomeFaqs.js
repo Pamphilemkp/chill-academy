@@ -1,27 +1,25 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const HomeFaqs = () => {
+  
+  const { t } = useTranslation();
+
   const faqData = [
-    {
-      question: "Who are your clients?",
-      answer: `Our clients encompass anyone with a project in mind or those harboring an idea.
-           At Chill Academy, we specialize in transforming ideas, no matter how small, into successful business ventures.
-            Fueled by passion, our team of developers is dedicated to turning any conceivable idea into a tangible, codable project.`,
-    },
-    {
-      question: "Where are your clients based?",
-      answer: `Chill Academy doesn't have geographical limitations. We've assembled a diverse team of developers from around the world,
-         embracing the richness of varied perspectives and eliminating borders or language barriers. Our primary goal is global recognition,
-          earning the trust of clients by not just delivering projects but ensuring their ongoing satisfaction long after project completion.`,
-    },
-    {
-      question: "How much is the initial price to start working with you?",
-      answer: `The cost, particularly the initial investment, is project-dependent. It hinges on factors such as project requirements and
-         deadlines provided by our clients. At Chill Academy, we emphasize transparency and are always available to discuss your project,
-          providing consultations free of charge.`,
-    },
+      {
+        question: t('faq-1'),
+        answer: t('faq-1-Answer')
+      },
+      {
+        question: t('faq-2'),
+        answer: t('faq-2-Answer')
+      },
+      {
+        question: t('faq-3'),
+        answer: t('faq-3-Answer')
+      },
   ];
 
   const [openQuestions, setOpenQuestions] = useState({});
@@ -37,7 +35,7 @@ const HomeFaqs = () => {
     <section className="bg-blue-100 dark:bg-gray-800">
       <div className="container px-6 py-12 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">
-          Frequently asked questions
+        {t('faqs-heading')}
         </h1>
 
         <div className="mt-8 space-y-8 lg:mt-12">
@@ -92,7 +90,7 @@ const HomeFaqs = () => {
               <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-blue-600 -rotate-12"></span>
               <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-blue-400 -rotate-12"></span>
               <span className="relative text-center">
-                Need Help? Visit our FAQs
+                {t('home-faqs-btn')}
               </span>
             </Link>
           </div>
