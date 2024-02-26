@@ -2,7 +2,7 @@ const Partners = () => {
     return (
         <section className="p-6 dark:bg-gray-800 dark:text-gray-100 bg-blue-100 text-gray-800 ">
 	<div className="container p-4 mx-auto text-center">
-		<h2 className="text-4xl font-bold">Trusted by the industry leaders</h2>
+		<h2 className="text-4xl font-bold">{t('partner-title')}</h2>
 	</div>
 	<div className="container flex flex-wrap justify-center mx-auto dark:text-gray-400">
 		<div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
