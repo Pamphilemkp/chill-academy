@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
+
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  dark:bg-gray-800 text-gray-800">
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
@@ -32,20 +36,20 @@ const Footer = () => {
           </a>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm dark:text-white">
-            {`CHILL ACADEMY is here to make tech easy for everyone. `}<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">{`Our mission is simple:`}</span> {`guide you through the world of technology in a fun and accessible way. Whether you're new or curious, we're your partners in exploring tech. Let's turn your curiosity into knowledge, making the tech journey personal and enjoyable together.`}
+            {t('chill-desc-0')}<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-bold">{t('chill-desc-1')}</span> {t('chill-desc-2')}
             </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-3">
           <div>
-            <p className="font-semibold tracking-wide dark:text-white"> ABOUT US </p>
+            <p className="font-semibold tracking-wide dark:text-white"> {t('footer-about-us-links')} </p>
             <ul className="dark:text-white mt-2 space-y-2">
               <li>
                 <a
                   href="/"
                   className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                 Our Team
+                {t('footer-about-us-link-1')} 
                 </a>
               </li>
               <li>
@@ -53,7 +57,7 @@ const Footer = () => {
                   href="/"
                   className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                Approach
+               {t('footer-about-us-link-2')} 
                 </a>
               </li>
               <li>
@@ -61,7 +65,7 @@ const Footer = () => {
                   href="/"
                   className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                Clients
+                {t('footer-about-us-link-3')} 
                 </a>
               </li>
               <li>
@@ -69,21 +73,21 @@ const Footer = () => {
                   href="/"
                   className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                Testimonials
+                {t('footer-about-us-link-4')} 
                 </a>
               </li>
             
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide dark:text-white">SERVICES</p>
+            <p className="font-semibold tracking-wide dark:text-white">{t('footer-service-links')} </p>
             <ul className="mt-2 space-y-2 dark:text-white text-gray-800">
               <li>
                 <a
                   href="/"
                   className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                 Web Applications
+                 {t('footer-service-link-1')}
                 </a>
               </li>
               <li>
@@ -91,7 +95,7 @@ const Footer = () => {
                   href="/"
                   className="relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                  Mobile Applications
+                 {t('footer-service-link-2')}
                 </a>
               </li>
               <li>
@@ -99,7 +103,7 @@ const Footer = () => {
                   href="/"
                   className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                  Websites 
+                  {t('footer-service-link-3')}
                 </a>
               </li>
               <li>
@@ -107,7 +111,7 @@ const Footer = () => {
                   href="/"
                   className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                  SEO Performances
+                  {t('footer-service-link-4')}
                 </a>
               </li>
               <li>
@@ -115,7 +119,7 @@ const Footer = () => {
                   href="/"
                   className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                  Project Enhancement
+                  {t('footer-service-link-5')}
                 </a>
               </li>
               <li>
@@ -123,13 +127,13 @@ const Footer = () => {
                   href="/"
                   className=" relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gradient-to-r from-blue-500 to-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 >
-                  Subservices
+                  {t('footer-service-link-1')}
                 </a>
               </li>
             </ul>
           </div>
           <span className="text-base font-bold tracking-wide dark:text-white">
-            Social
+          {t('footer-social')}
             <div className="flex items-center mt-4 space-x-3">
               <a
                 href="/"
@@ -201,7 +205,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-sm dark:text-gray-500 ">
-            Stay connected with Chill ACADEMY! Follow us on our social media channels for the latest updates, news, and tech insights.
+            {t('footer-last-desc')}
             </p>
           </span>
         </div>
