@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/Features"
+                href="/Product"
                 aria-label="Our product"
                 title="Our product"
                 className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88] dark:text-white  hover:bg-[#0c66ee] hover:text-white hover:shadow-md inline-block"
@@ -204,7 +204,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="/Features"
+                          href="/Product"
                           aria-label="Our product"
                           title="Our product"
                           className={ currentRoute === '/Features' ? "font-medium tracking-wide text-gray-800 transition duration-300 border-b-2 border-green-900 dark:border-yellow-500 rounded-full px-4 py-2 w-[100%] text-center hover:bg-gradient-to-r from-[#46f9de] to-[#0cee88]    dark:text-white  hover:bg-[#0c66ee] hover:text-white  hover:shadow-md inline-block"

@@ -1,8 +1,8 @@
 import ProductComponent from "@/components/ProductComponent";
 
 export const metadata = {
-  title: 'Faqs',
-  description: 'Explore our comprehensive FAQ section to find answers to commonly asked questions about Chill Academy, providing valuable insights and information to enhance your understanding of our offerings and services...',
+  title: 'Products: Your One-Stop Shop for All Your Tech Needs',
+  description: 'Explore Chill Academy, your trusted partner in the tech world. We offer a comprehensive range of services, from web & mobile app development to SEO & learning solutions. Empower your vision, solve problems, and unlock your tech potential with us.',
 };
 
 export default function Home() {
