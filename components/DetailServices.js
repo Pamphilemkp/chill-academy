@@ -13,7 +13,9 @@ import ITSupportIcon from "../public/images/DetailService/ITSupportIcon.svg";
 import AssignmentIcon from "../public/images/DetailService/AssignmentIcon.svg";
 import WebUpdateIcon from "../public/images/DetailService/WebUpdateIcon.svg";
 import YoutubeIcon from "../public/images/DetailService/YoutubeIcon.svg";
-
+import BusinessPortfolio from '../public/images/DetailService/BusinessPortfolio.svg';
+import SocialPortfolio from '../public/images/DetailService/SocialPortfolio.svg';
+import PersonalPortfolio from '../public/images/DetailService/PersonalPortfolio.svg';
 const services = [
   {
     id: 1,
@@ -30,6 +32,39 @@ const services = [
     sub_title: "Simple, Effective Mobile Solutions",
     description: "At Chill Academy, we create easy-to-use mobile apps that boost your online presence. Our approach is all about making your web experience better through smart, user-friendly mobile applications.",
 
+  },
+  {
+    icon: (
+      <Image
+        src={BusinessPortfolio}
+        className="h-14 w-14"
+        alt="BusinessPortfolioicon"
+      ></Image>
+    ),
+    title: "Business Portfolio",
+    sub_title: "Building Trust and Credibility",
+    description:
+      "Demonstrate your expertise and value proposition by presenting impactful case studies. Detail challenges solved, strategies implemented, and quantifiable results achieved to build trust and attract potential clients.",
+  },
+  {
+    icon: (
+      <Image
+        src={PersonalPortfolio}
+        className="h-14 w-14"
+        alt="PersonalPortfolio"
+      ></Image>
+    ),
+    title: "Social Media Portfolio",
+    sub_title: "Visually Captivating Content",
+    description:
+      "Capture attention with high-quality visuals, showcasing your best work on platforms like Instagram, Behance, or Dribbble. Use engaging captions and relevant hashtags to reach a wider audience and amplify your brand voice.",
+  },
+  {
+    icon:  <Image src={SocialPortfolio } className='h-14 w-14' alt="SocialPortfolio "></Image>,
+    title: "Personal Portfolio",
+    sub_title: "Highlighting Your Individuality",
+    description: "Choose projects that best represent your skills, interests, and career aspirations. Tailor your portfolio content to showcase your unique strengths and passion for your field.",
+   
   },
   {
     id: 3,
