@@ -62,7 +62,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-sm text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+92)3194028899
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-sm text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                    chilltechacademy@gmail.com
                     </p>
                   </div>
                 </div>
