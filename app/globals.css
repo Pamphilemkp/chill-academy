@@ -71,3 +71,10 @@ width: 100%;
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.custom-text-gradient-testimontal{
+  background-image: linear-gradient(90deg, #BFDBFE, #3B82F6, #1D4ED8); /* Gradient from light blue to medium blue to dark blue */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent
+}
