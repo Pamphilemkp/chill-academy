@@ -227,10 +227,10 @@ const ProductComponent = () => {
           Powerful Products to Achieve Your Vision
         </h1>
         <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-          Take your digital presence to the next level with Chill Academy's
+         {`Take your digital presence to the next level with Chill Academy's
           innovative products. We offer easy-to-understand solutions designed to
           make your ideas a reality, boost your online presence, and help you
-          reach your goals.
+          reach your goals.`}
         </p>
         <div className="flex mt-6 justify-center">
           <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#468ef9] to-[#0c66ee] inline-flex"></div>
